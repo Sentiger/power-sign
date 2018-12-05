@@ -1,6 +1,6 @@
 # 微服务签名算法
 ## package源安装
-> `composer require sentiger/power-sign ` 暂时没有发布
+> `composer require sentiger/power-sign `
 
 ## 普通使用
 ```php
