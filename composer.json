@@ -1,0 +1,22 @@
+{
+    "name": "sentiger/power-sign",
+    "authors": [
+        {
+            "name": "Sentiger",
+            "email": "shi_wenhu@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sentiger\\PowerSign\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sentiger\\PowerSign\\ServiceProvider"
+            ]
+        }
+    }
+}
