@@ -10,7 +10,7 @@ include __DIR__ . '/vendor/autoload.php';
 $appKey       = '0123456';
 $appSecretKey = '4564877211';
 $expireTime   = 0;
-$signClient   = new \yiche\Sign\Sign($appKey, $appSecretKey, $expireTime);
+$signClient   = new \Sentiger\PowerSign\PowerSign($appKey, $appSecretKey, $expireTime);
 
 $data    = [
     'client_time' => time(),
@@ -55,7 +55,7 @@ print_r($signStr);
 - 通过依赖注入使用
 
 ```php
-Route::get('sign', function (\yiche\Sign\Sign $signClient) {
+Route::get('sign', function (\Sentiger\PowerSign\PowerSign) {
     $data = [
         'client_time' => 1543995526,
         'name'        => '张三',
